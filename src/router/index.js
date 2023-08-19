@@ -39,6 +39,36 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/UtrView.vue')
     }
+  },
+  {
+    path: '/filosofia',
+    name: 'filosofia',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/filosofiaView.vue')
+    }
+  },
+  {
+    path: '/ubicacion',
+    name: 'ubicacion',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/ubicacionView.vue')
+    }
+  },
+  {
+    path: '/acerca',
+    name: 'acerca',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: function () {
+      return import(/* webpackChunkName: "about" */ '../views/acercadeView.vue')
+    }
   }
 ]
 

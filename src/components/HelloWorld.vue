@@ -36,8 +36,8 @@ export default {
 
   }),
   created() {
-
-this.validar();
+//quitar el comentario de this.validar para que inicie sola la aplicacion
+  //this.validar();
 },
   methods: {
     openDialog() {
@@ -59,7 +59,7 @@ this.validar();
           const l = this.loader
           this[l] = !this[l]
 
-          setTimeout(() => (this[l] = false), 2000)
+          setTimeout(() => (this[l] = false), 7000)
           this.loader = null
           this.validar();
         },
